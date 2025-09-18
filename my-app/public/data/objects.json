@@ -3,18 +3,18 @@
     "id": 1,
     "title": "High School Student",
     "description": "You want to pursue information technology, want to study in a professional programming training environment, with a systematic program and guaranteed output.",
-    "image": "/images/highschool.png"
+    "image": "https://cdn.thuviennhadat.vn/upload/hinh-anh-bai-viet/TTND/hoc-sinh-lop-muoi.jpg"
   },
   {
     "id": 2,
     "title": "Student",
     "description": "You want to pursue information technology, want to study in a professional programming training environment, with a systematic program and guaranteed output.",
-    "image": "/images/student.png"
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7To6XpkOPx_f3iHHnz6kg_oh5PtPknU9ljLMeXpYnXwLgOE8j"
   },
   {
     "id": 3,
     "title": "Working",
     "description": "You want to pursue information technology, want to study in a professional programming training environment, with a systematic program and guaranteed output.",
-    "image": "/images/working.png"
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/021/510/767/small/image-of-a-group-of-asian-businessmen-working-together-at-the-company-photo.jpg"
   }
 ]

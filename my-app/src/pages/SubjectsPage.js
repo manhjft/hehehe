@@ -1,17 +1,26 @@
-import subjects from "../data/subjects.json";
+import React, { useEffect, useState } from "react";
 import SubjectCard from "../components/SubjectCard";
+import "./../App.css";
 
-export default function SubjectsPage() {
+function SubjectPage() {
+  const [subjects, setSubjects] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/subjects.json")
+      .then((res) => res.json())
+      .then((data) => setSubjects(data));
+  }, []);
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-      {subjects.map((sub) => (
-        <SubjectCard
-          key={sub.id}
-          subject={sub.subject}
-          description={sub.description}
-          image={sub.image}
-        />
-      ))}
+    <div>
+      <h2 className="section-title">What is the Course Program?</h2>
+      <div className="grid">
+        {subjects.map((subj) => (
+          <SubjectCard key={subj.id} {...subj} />
+        ))}
+      </div>
     </div>
   );
 }
+
+export default SubjectPage;

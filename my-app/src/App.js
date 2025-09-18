@@ -1,22 +1,26 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ObjectsPage from "./pages/ObjectsPage";
 import SubjectsPage from "./pages/SubjectsPage";
 
-export default function App() {
+function App() {
   return (
-    <Router>
+    <div>
       <Header />
-      <nav className="bg-gray-200 p-4 flex gap-4 justify-center">
-        <Link to="/objects" className="text-blue-600">Objects</Link>
-        <Link to="/subjects" className="text-blue-600">Subjects</Link>
-      </nav>
-      <Routes>
-        <Route path="/objects" element={<ObjectsPage />} />
-        <Route path="/subjects" element={<SubjectsPage />} />
-      </Routes>
+      <main>
+        <h2 className="text-center text-2xl font-bold my-6">
+          Who Should Learn Programming?
+        </h2>
+        <ObjectsPage />
+
+        <h2 className="text-center text-2xl font-bold my-6">
+          What is the Course Program?
+        </h2>
+        <SubjectsPage />
+      </main>
       <Footer />
-    </Router>
+    </div>
   );
 }
+
+export default App;

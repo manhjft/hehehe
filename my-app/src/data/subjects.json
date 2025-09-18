@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "subject": "ReactJS",
+    "description": "Learn ReactJS with a structured program and real-world projects to confidently apply for jobs.",
+    "image": "/images/reactjs.png"
+  },
+  {
+    "id": 2,
+    "subject": "PHP",
+    "description": "Master PHP backend development with practical lessons and hands-on experience.",
+    "image": "/images/php.png"
+  },
+  {
+    "id": 3,
+    "subject": ".NET",
+    "description": "Build enterprise-level applications using .NET Core with modern practices.",
+    "image": "/images/net.png"
+  }
+]
